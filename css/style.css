@@ -120,7 +120,7 @@ img {
 /* Querformat */
 
 .landscape {
-    width: 100%;
+    max-width: 90%;
     margin-bottom: 3rem;
 }
 
@@ -128,7 +128,7 @@ img {
 
 .portrait {
     max-height: 90vh;
-    width: auto;
+    max-width: 90%;
     margin: 0 auto 3rem auto;
 }
 
