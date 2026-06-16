@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brunnenmarkt</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">← Home</a>
+    </nav>
+</header>
+
+<section class="project-header">
+    <h1>Brunnenmarkt</h1>
+    <p>Wien, Sommer 2026</p>
+</section>
+
+<section class="gallery">
+
+    <img src="images/bild01.jpg" class="landscape" alt="">
+    <img src="images/bild02.jpg" class="portrait" alt="">
+    <img src="images/bild03.jpg" class="landscape" alt="">
+    <img src="images/bild04.jpg" class="landscape" alt="">
+    <img src="images/bild05.jpg" class="portrait" alt="">
+    <img src="images/bild06.jpg" class="portrait" alt="">
+    <img src="images/bild07.jpg" class="portrait" alt="">
+    <img src="images/bild08.jpg" class="landscape" alt="">
+
+</section>
+
+<script>
+document.addEventListener('contextmenu', e => {
+    e.preventDefault();
+});
+
+document.querySelectorAll('img').forEach(img => {
+    img.setAttribute('draggable', 'false');
+
+    img.addEventListener('dragstart', e => {
+        e.preventDefault();
+    });
+});
+</script>
+
+</body>
+</html>

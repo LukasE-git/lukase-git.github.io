@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lukas Edelmayer Fotografie   </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+
+<header>
+    <h1>Lukas Edelmayer</h1>
+
+    <nav>
+        <a href="#">Work</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+
+<section class="project">
+<div class="hero">
+    <a href="Brunnenmarkt.html">
+        <img src="images/hero.jpg" alt="Brunnenmarkt">
+    </a>
+</div>
+
+<div class="project-info">
+    <h2>Brunnenmarkt</h2>
+    <p>
+        Wien, Sommer 2026
+    </p>
+</div>
+
+</section>
+
+<script>
+document.addEventListener('contextmenu', e => {
+    e.preventDefault();
+});
+
+document.querySelectorAll('img').forEach(img => {
+    img.setAttribute('draggable', 'false');
+
+    img.addEventListener('dragstart', e => {
+        e.preventDefault();
+    });
+});
+</script>
+
+</body>
+
+</html>

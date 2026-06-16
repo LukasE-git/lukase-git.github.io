@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #111;
+    background: #fff;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5vw;
+}
+
+header h1 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+}
+
+nav a {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.9rem;
+    color: #111;
+    text-decoration: none;
+    opacity: 0.7;
+    margin-left: 2rem;
+    transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+/* ---------- Allgemeine Bildregeln ---------- */
+
+img {
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* ---------- Startseite ---------- */
+
+.hero {
+    width: min(1000px, 85%);
+    margin: 4rem auto 1.5rem auto;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.project-info {
+    width: min(1000px, 85%);
+    margin: 0 auto 5rem auto;
+}
+
+.project-info h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.project-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* ---------- Intro / About ---------- */
+
+.intro {
+    width: min(800px, 85%);
+    margin: 5rem auto 6rem auto;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+}
+
+.intro p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* ---------- Projektseite ---------- */
+
+.project-header {
+    width: min(1000px, 85%);
+    margin: 3rem auto;
+}
+
+.project-header h1 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.project-header p {
+    margin-top: 0.3rem;
+    color: #666;
+}
+
+/* ---------- Galerie ---------- */
+
+.gallery {
+    width: min(1000px, 85%);
+    margin: 0 auto 5rem auto;
+}
+
+/* Querformat */
+
+.landscape {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+/* Hochformat */
+
+.portrait {
+    max-height: 90vh;
+    width: auto;
+    margin: 0 auto 3rem auto;
+}
+
+/* ---------- Links auf Bildern ---------- */
+
+.hero a {
+    display: block;
+}
+
+.hero img {
+    transition: opacity 0.2s ease;
+}
+
+.hero a:hover img {
+    opacity: 0.95;
+}
