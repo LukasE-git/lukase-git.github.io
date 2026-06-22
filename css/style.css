@@ -13,17 +13,22 @@ body {
 /* ---------- Header ---------- */
 
 header {
+    font-family: "IBM Plex Mono", monospace;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 5vw;
+
+    padding: 0.5rem 5vw;
+
+    position: sticky;
+    top: 0;
+    
+    z-index: 1000;
 }
 
-header h1 {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.9rem;
-    font-weight: 400;
-    letter-spacing: 0.08em;
+header h1 a {
+    color: inherit;
+    text-decoration: none;
 }
 
 nav a {
@@ -101,7 +106,11 @@ img {
 }
 
 .project-header {
-    margin-bottom: 4rem;
+margin-bottom: 2rem;
+}
+.gallery {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .gallery img {
