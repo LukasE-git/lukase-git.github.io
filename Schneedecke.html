@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schneedecke</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">← Home</a>
+    </nav>
+</header>
+
+<main class="project-container">
+<div class="project-header">
+    <h1>Schneedecke</h1>
+    <p>Wien, Winter 2025/2026</p>
+</div>
+
+<div class="gallery">
+
+    <img src="images/20260120_005145610003.jpg" class="landscape" alt="">
+    <img src="images/20260120_005145610008.jpg" class="portrait" alt="">
+    <img src="images/20260120_005145610010.jpg" class="portrait" alt="">
+    <img src="images/20260120_005145610015.jpg" class="landscape" alt="">
+    <img src="images/20260120_005145610024.jpg" class="portrait" alt="">
+    <img src="images/20260223_005154700024.jpg" class="landscape" alt="">   
+    <img src="images/20260223_005154700025.jpg" class="landscape" alt="">
+    <img src="images/20260223_005154700026.jpg" class="landscape" alt="">
+    <img src="images/20260223_005154700028.jpg" class="landscape" alt="">
+    <img src="images/20260223_005154700030.jpg" class="landscape" alt="">   
+    <img src="images/20260223_005154700034.jpg" class="landscape" alt="">
+
+</div>
+</main>
+
+<script>
+document.addEventListener('contextmenu', e => {
+    e.preventDefault();
+});
+
+document.querySelectorAll('img').forEach(img => {
+    img.setAttribute('draggable', 'false');
+
+    img.addEventListener('dragstart', e => {
+        e.preventDefault();
+    });
+});
+</script>
+
+</body>
+</html>
