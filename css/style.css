@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scrollbar-gutter: stable;
+}
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: #111;
@@ -27,6 +31,19 @@ header {
     backdrop-filter: blur(6px);
     
     z-index: 1000;
+    
+}
+
+.header-inner {
+
+    width: min(900px, 85%);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.5rem 0;
 }
 
 header h1 a {
@@ -35,17 +52,30 @@ header h1 a {
     white-space: nowrap;
 }
 
+
+header h1 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+
 nav a {
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.9rem;
     color: #111;
     text-decoration: none;
-    opacity: 0.7;
+    opacity: 0.6;
     margin-left: 2rem;
     transition: opacity 0.2s ease;
 }
 
 nav a:hover {
+    opacity: 1;
+}
+
+nav a.active {
     opacity: 1;
 }
 
@@ -70,7 +100,7 @@ img {
 
 .project-info {
     width: min(900px, 85%);
-    margin: 0 auto 8cap auto;
+    margin: 0 auto 8rem auto;
 }
 
 .project-info h2 {
@@ -110,6 +140,8 @@ img {
 }
 
 .project-header {
+font-size: 1rem;
+font-weight: 400; 
 margin-bottom: 2rem;
 }
 .gallery {
@@ -173,3 +205,4 @@ margin-bottom: 2rem;
     }
 
 }
+
