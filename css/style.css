@@ -104,8 +104,8 @@ img {
 }
 
 .project-info h2 {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
@@ -137,14 +137,13 @@ img {
 
 /* ---------- Projektseite ---------- */
 .project-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
+    width: min(900px, 85%);
+    margin: 2rem auto;
 }
 
 .project-header {
-font-size: 1rem;
-font-weight: 400; 
+font-size: 0.7rem;
+font-weight: 600; 
 margin-bottom: 2rem;
 }
 .gallery {
