@@ -180,18 +180,9 @@ margin-bottom: 2rem;
     opacity: 0.95;
 }
 
-@media (max-width: 768px) {
-
-    .portrait {
-        max-height: 80vh;
-        max-width: 85%;
-    }
-
-}
-
 /* ---------- Mobile ---------- */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
     header {
         padding: 1rem 6vw;
@@ -217,5 +208,11 @@ margin-bottom: 2rem;
         margin-left: 0;
         font-size: 0.9rem;
     }
+
+    .portrait {
+        max-height: 80vh;
+        max-width: 85%;
+    }
+
 
 }
