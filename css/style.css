@@ -142,13 +142,13 @@ img {
 }
 
 .project-header {
-font-size: 0.7rem;
-font-weight: 600; 
-margin-bottom: 2rem;
+font-size: 0.6rem;
+font-weight: 400; 
+margin: 0 auto 4rem auto;
 }
 .gallery {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 4rem auto;
 }
 
 .gallery img {
